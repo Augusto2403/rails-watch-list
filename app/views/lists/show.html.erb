@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="card-show-title">
+    <h1>Movie 🎬</h1>
+    <h2><%= @list.name %></h2>
+    <div>
+      <% @list.bookmarks.each do |bookmark| %>
+        <br>
+        <br>
+       <li>
+         <%= bookmark.movie.title %>
+         <br>
+         <div>Movie overview :</div>
+         <%= bookmark.movie.overview %>
+         <br>
+         <br>
+         <div>My comment :</div>
+         <%= bookmark.comment %> | <%= link_to "delete a movie ", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure???" } %>
+       </li>
+      <% end %>
+
+      <br>
+    </div>
+    <%= link_to "delete the list", list_path(@list), method: :delete, id: "delete-link", class: "hidden" %>
+    <br>
+    <%= link_to "add a movie", new_list_bookmark_path(@list) %>
+    <br>
+    <%= link_to "Go back home", lists_path %>
+  </div>
+</div>

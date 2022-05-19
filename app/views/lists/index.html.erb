@@ -1,0 +1,14 @@
+<div class="banner" style="background-image: url(https://raindance.org/wp-content/uploads/2021/03/15-things-everyone-does-on-set.jpg)">
+  <div class="container flex flex-horizontal-center">
+   <h1>My movie lists</h1>
+  </div>
+</div>
+<br>
+<br>
+<%= link_to " + Create a new list ", new_list_path %>
+<br>
+<ul class="p-0">
+  <% @lists.each do |list| %>
+    <li class="list-group-item text-center p-4 m-2"><%=  link_to list.name, list_path(list) %></li>
+  <% end %>
+</ul>
