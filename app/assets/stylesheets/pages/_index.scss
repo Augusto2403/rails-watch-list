@@ -2,18 +2,49 @@
 @import "home";
 
 
-h1{
-  color: rgb(255, 255, 255);
-  width: 2000px;
-  font-size: 50px;
-  height: 90px;
-  margin-top: 160px;
-
-}
-
 
 div a{
+  text-decoration: none;
+  color: black;
+}
+
+.card-show-title {
+  color: black;
+  text-align: center;
+  .abc {
+    text-align: left;
+  }
+}
+.link-container  {
   text-decoration-style: none;
-  background-color: black;
- color: aliceblue;
+  width: 150px;
+  margin: 0;
+}
+
+li {
+  color: black;
+  .abc-color {
+    color: rgb(20, 72, 2);
+  }
+}
+
+.banner-movie {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 1450px;
+  h1 {
+    color: rgb(255, 255, 255);
+    width: 1450px;
+    font-size: 50px;
+    height: 90px;
+  }
+  h2 {
+    color: darkblue;
+    font-size: 30px;
+  }
+}
+
+.navbar {
+  width: 1450px;
 }

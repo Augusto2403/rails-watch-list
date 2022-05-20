@@ -5,12 +5,25 @@
   background-position: center;
   background-size: cover;
   text-align: center;
+  h1 {
+    color: rgb(255, 255, 255);
+    width: 2000px;
+    font-size: 50px;
+    height: 90px;
+    margin-top: 160px;
+    margin-right: 0;
+  }
+}
+
+
+.container.flex.flex-horizontal-center {
+  width: 2000px;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  // display: flex;
+  // justify-content: center;
+  // text-align: center;
   width: 2000px;
   height: 300px;
 }
